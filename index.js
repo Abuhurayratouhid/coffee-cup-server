@@ -25,7 +25,7 @@ const client = new MongoClient(uri, {
 
 async function run() {
   try {
-    await client.connect();
+    // await client.connect();
     
     // myDB
     const coffeeDB = client.db("coffeeDB");
@@ -57,7 +57,7 @@ run().catch(err => console.log(err));
 
 
 app.get('/', (req, res) => {
-  res.send('Hey coffee lover!')
+  res.send('Hey coffee lover3!')
 })
 
 app.listen(port, () => {
